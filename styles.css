@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap");
+
+html {
+  scroll-behavior: smooth smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 2.7em;
+  text-shadow: 3px 3px 5px #5c5555;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(1, 93, 199));
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  padding: 0px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: whitesmoke;
+}
+
+header .navegador {
+  display: flex;
+  text-align: center;
+  margin-right: 50px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-shadow: 3px 3px 10px #1b1a1a;
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+header a:hover {
+  border: 1px solid rgba(245, 245, 245);
+  border-radius: 15px;
+}
+
+.miBoton {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(1, 93, 199);
+  text-decoration: none; /* Esto quita el subrayado */
+}
+.miBoton:hover {
+  background-color: rgb(1, 60, 199);
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./media/hero.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#Acerca-de-mi .container {
+  text-align: center;
+  padding: 200px 120px;
+}
+
+#Acerca-de-mi h2 {
+  padding: 20px;
+}
+
+.color-acentado {
+  color: rgb(1, 93, 199);
+}
+
+#Equipo {
+  background-image: linear-gradient(to right, rgb(1, 93, 199), rgb(27, 27, 27));
+  color: white;
+  text-align: center;
+}
+
+#Equipo .container {
+  padding: 70px 20px 50px 20px;
+}
+
+#Equipo h2 {
+  margin-bottom: 40px;
+  font-size: 3.2em;
+}
+
+#Equipo p {
+  padding: 15px;
+}
+
+#Equipo .carta {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 12px;
+  border-radius: 20px;
+}
+
+.carta {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./media/front-end.jpg");
+}
+
+#Contactame {
+  padding: 100px 200px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Contactame h2 {
+  padding-bottom: 15px;
+}
+
+#Contactame .container {
+  text-align: center;
+}
+
+#Contactame .form {
+  width: 100%;
+}
+
+#Contactame .mb-3 {
+  padding-bottom: 15px;
+}
+
+input {
+  text-align: center;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  text-align: center;
+}
+
+#Contactame .mb-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(1, 93, 199);
+}
+
+button:hover {
+  background-color: rgb(1, 60, 199);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 100px;
+  text-shadow: 3px 3px 5px #5c5555;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 769px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .container {
+    padding: 0px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .navegador {
+    display: flex;
+    text-align: center;
+    margin-right: 25px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  header a:hover {
+    border: 1px solid rgba(245, 245, 245);
+    border-radius: 15px;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  #hero h1 {
+    margin-top: 110px;
+  }
+
+  #hero button {
+    margin-top: 40px;
+  }
+
+  #Acerca-de-mi .container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #Acerca-de-mi .texto {
+    width: 100%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .texto h2,
+  p {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .carta {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("./media/front-end-cropped.jpg");
+  }
+
+  #Contactame {
+    padding: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    width: 100%;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 591px) {
+  button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(1, 93, 199);
+  }
+
+  button:hover {
+    background-color: rgb(1, 60, 199);
+    cursor: pointer;
+  }
+
+  button {
+    padding: 5px 40px;
+    text-shadow: 3px 3px 5px #5c5555;
+  }
+}
+
+@media (max-width: 466px) {
+  #Contactame h2 {
+    font-size: 2.2em;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 417px) {
+  header .container {
+    padding: 0px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .navegador {
+    display: flex;
+    text-align: center;
+    margin-right: 12px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #Contactame h2 {
+    font-size: 1.8em;
+    padding-bottom: 15px;
+  }
+}
